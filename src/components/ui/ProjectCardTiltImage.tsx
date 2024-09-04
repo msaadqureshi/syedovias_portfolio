@@ -11,7 +11,7 @@ type Props = {
   };
 };
 const ProjectCardTiltImage = ({ project, filter }: Props): JSX.Element => {
-  let show = true;
+  const show = true;
 
   return (
     show && (
