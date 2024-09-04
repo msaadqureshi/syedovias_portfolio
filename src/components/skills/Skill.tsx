@@ -53,6 +53,8 @@ const Skill = ({
         <Image
           src={img}
           alt={img}
+          width={300} // specify width
+          height={500}
           className="rounded-2xl w-full h-auto lg:w-[300px] lg:h-[500px]"
         />
       ) : (

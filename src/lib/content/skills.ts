@@ -104,7 +104,7 @@ export const skillsSection: SkillsSectionType = {
         { name: 'Hungary', icon: '🇭🇺' },
         { name: 'Spain', icon: '🇪🇸' },
         { name: 'Italy', icon: '🇮🇹' },
-        { name: 'United Kingdom (UK)', icon: '🏴' },
+        { name: 'United Kingdom (UK)', icon: '🇬🇧' },
         { name: 'United Arab Emirates', icon: '🇦🇪' },
       ],
     },

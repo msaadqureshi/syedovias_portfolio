@@ -54,12 +54,13 @@ const About = () => {
           <>
             <h3 className="text-accent">Our Vision</h3>
             <p>
-              Syed Ovais Shah believes in the power of transformative leadership and
-              strategic thinking. <br /> His vision is to build businesses that
-              not only thrive in the marketplace but also contribute positively
-              to the community and the environment. <br /> By embracing
-              cutting-edge technologies and sustainable practices, S.Ovais is
-              dedicated to creating a legacy of success and social impact.
+              Syed Ovais Shah believes in the power of transformative leadership
+              and strategic thinking. <br /> His vision is to build businesses
+              that not only thrive in the marketplace but also contribute
+              positively to the community and the environment. <br /> By
+              embracing cutting-edge technologies and sustainable practices,
+              S.Ovais is dedicated to creating a legacy of success and social
+              impact.
             </p>
           </>
         </div>
