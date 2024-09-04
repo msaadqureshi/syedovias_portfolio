@@ -37,15 +37,15 @@ export type ProjectType = {
 // Project Details
 
 export interface Project {
-  slug: string;
-  tagline: string;
-  description: string;
-  img: string;
+  slug?: string;
   name: string;
-  tags: string[];
-  github: string;
-  category: string[];
-  featured: boolean;
+  img: string;
+  category?: string;
+  tagline?: string;
+  description?: string;
+  tags?: string[];
+  github?: string;
+  featured?: boolean;
   launch_video?: string;
   url?: string;
 }
