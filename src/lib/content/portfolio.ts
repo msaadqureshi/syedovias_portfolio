@@ -24,9 +24,8 @@ export const seoData = {
   description:
     'Syed Ovais is a dynamic entrepreneur and visionary businessman with a passion for innovation and excellence.',
   author: author.name,
-  image:
-    'https://user-images.githubusercontent.com/68834718/217467445-0b0d2d63-f8ad-4702-8474-814eb2cbb3be.png',
-  url: 'https://vatsalsinghkv.vercel.app/',
+  image: '/webBanner.png',
+  url: 'https://syedovais.com/',
   keywords: [
     'Ovais',
     'Syed Ovais',
