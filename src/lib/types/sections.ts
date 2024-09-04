@@ -42,6 +42,7 @@ type SkillType = {
     light: string;
     dark: string;
   };
+  img: string;
   points: string[];
   softwareSkills: SoftwareSkillType[];
 };

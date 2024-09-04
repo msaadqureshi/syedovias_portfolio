@@ -5,8 +5,8 @@ export const contactSection: ContactSectionType = {
   title: 'get in touch',
   subtitle: "what's next",
   paragraphs: [
-    'I’m currently looking for a remote job or any new opportunities.',
-    'Whether you have a project to discuss or just want to say hi, my inbox is open for all!',
+    'I`m actively seeking new business ventures and remote opportunities that align with my entrepreneurial spirit.',
+    'If you have a project you`d like to collaborate on or simply want to connect, my inbox is always open. Let`s explore how we can create something impactful together!',
   ],
   link: `mailto:${author.email}`,
 };

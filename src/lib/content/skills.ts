@@ -63,6 +63,7 @@ export const skillsSection: SkillsSectionType = {
         light: '/lotties/coding.json',
         dark: '/lotties/coding.json',
       },
+      img: '/syedovais4.jpeg', // '/ovaisportfolio.png',
       points: [
         'Exploring diverse cultures and traditions across different countries.',
         'Experiencing new cuisines and local delicacies.',

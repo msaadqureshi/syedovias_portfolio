@@ -8,6 +8,7 @@ import { motion, MotionProps } from 'framer-motion';
 
 type Props = {
   lottie?: any;
+  img: string;
   title: string;
   points: string[];
   skills: SoftwareSkillType[];
@@ -15,6 +16,7 @@ type Props = {
 } & MotionProps;
 
 const Skill = ({
+  img,
   lottie,
   title,
   skills,
@@ -46,7 +48,18 @@ const Skill = ({
         </ul>
       </div>
       {/* Right */}
-      <ShowLottie path={lottie} className="md:min-h-[448px] md:min-w-[448px]" />
+      {img ? (
+        <img
+          src={img}
+          alt={img}
+          className="rounded-2xl w-full h-auto lg:w-[300px] lg:h-[500px]"
+        />
+      ) : (
+        <ShowLottie
+          path={lottie}
+          className="md:min-h-[448px] md:min-w-[448px]"
+        />
+      )}
     </motion.div>
   );
 };
