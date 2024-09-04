@@ -1,5 +1,6 @@
 /* eslint-disable react/require-default-props */
 import { Project } from '@/lib/types';
+import Image from 'next/image';
 import { Tilt } from 'react-tilt';
 
 type Props = {
@@ -21,7 +22,7 @@ const ProjectCardTiltImage = ({ project, filter }: Props): JSX.Element => {
             transition-all duration-300 transform hover:opacity-80 hover:shadow-violet-5xl"
           >
             {/* <Link href={`/project/${project.slug}`}> */}
-            <img
+            <Image
               src={project.img}
               alt={project.name}
               className="rounded-2xl w-full h-auto lg:w-[400px] lg:h-[300px]"

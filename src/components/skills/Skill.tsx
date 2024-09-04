@@ -5,6 +5,7 @@ import { getId } from '@/lib/utils/helper';
 import { ListItem, ShowLottie, SkillIcon } from '@/components';
 
 import { motion, MotionProps } from 'framer-motion';
+import Image from 'next/image';
 
 type Props = {
   lottie?: any;
@@ -49,7 +50,7 @@ const Skill = ({
       </div>
       {/* Right */}
       {img ? (
-        <img
+        <Image
           src={img}
           alt={img}
           className="rounded-2xl w-full h-auto lg:w-[300px] lg:h-[500px]"
