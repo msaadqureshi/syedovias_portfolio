@@ -25,7 +25,8 @@ export const seoData = {
     'Syed Ovais is a dynamic entrepreneur and visionary businessman with a passion for innovation and excellence.',
   author: author.name,
   image: '/webBanner.png',
-  url: 'https://syedovais.com/',
+  // url: 'https://syedovais.com/',
+  url: 'https://syedovais.netlify.app/',
   keywords: [
     'Ovais',
     'Syed Ovais',
