@@ -8,8 +8,7 @@ import { StringKeyValueType } from '../types';
 
 export const author = {
   name: 'Ovais Shah',
-  // email: 'syed@syedovais.com',
-  email: 's.s.ovais@gmail.com',
+  email: 'shah@syedovais.com',
 };
 
 export const socialLinks: StringKeyValueType = {
