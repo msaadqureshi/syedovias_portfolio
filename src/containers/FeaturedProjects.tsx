@@ -3,11 +3,13 @@ import { motion } from 'framer-motion';
 
 import featuredProjectsSection from '@/lib/content/featured-projects';
 
+import { getInstagramFeed } from './../lib/utils/functions';
 import { Wrapper } from '@/components';
 import FeaturedProject from '@/components/ui/FeaturedProject';
 
 import ProjectCardTiltImage from '@/components/ui/ProjectCardTiltImage';
 import { getSectionAnimation } from '@/styles/animations';
+import { useEffect, useState } from 'react';
 
 const Achievements = [
   {
@@ -31,6 +33,7 @@ const Achievements = [
 ];
 
 const FeaturedProjects = () => {
+
   return (
     <Wrapper id="projects" {...getSectionAnimation}>
       <div className="mb-20 space-y-3 text-center lg:text-left">

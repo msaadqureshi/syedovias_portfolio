@@ -5,7 +5,7 @@ export const aboutSection: AboutSectionType = {
   // Paragraphs need to be changed from `/containers/About.tsx`
   // Because it wasn't possible to insert anchor tags like this
   list: {
-    title: 'Here are a few areas I’ve been focusing on recently:',
+    title: 'Here are some key areas I’ve been focusing on recently:',
     items: [
       'Business Development',
       'Strategic Planning',

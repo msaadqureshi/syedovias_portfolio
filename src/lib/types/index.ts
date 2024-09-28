@@ -54,7 +54,7 @@ export interface FeaturedProjectType
   extends Omit<ProjectType, 'year' | 'repo'> {
   description: string;
   repo?: string;
-  tasks?: string;
+  tasks?: string | JSX.Element;
 }
 
 export type StringKeyValueType = {

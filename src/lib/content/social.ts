@@ -3,25 +3,37 @@ import { SocialSectionType } from '@/lib/types/sections';
 
 export const socialSection: SocialSectionType = {
   socialLinks: [
+    // {
+    //   icon: 'tabler:brand-github',
+    //   url: socialLinks.github,
+    // },
+    // {
+    //   icon: 'tabler:brand-github',
+    //   url: socialLinks.github,
+    // },
     {
-      icon: 'tabler:brand-github',
-      url: socialLinks.github,
-    },
-    {
-      icon: 'mdi:instagram',
+      icon: '/SocialIcons/insta.svg', // 'mdi:instagram',
       url: socialLinks.instagram,
     },
     {
-      icon: 'lucide:twitter',
-      url: socialLinks.twitter,
+      icon: '/SocialIcons/gmail.svg', // 'mdi:instagram',
+      url: socialLinks.gmail,
     },
-    {
-      icon: 'lucide:linkedin',
-      url: socialLinks.linkedin,
-    },
-    {
-      icon: 'lucide:facebook',
-      url: socialLinks.facebook,
-    },
+    // {
+    //   icon: '/SocialIcons/facebook.svg', // 'lucide:facebook',
+    //   url: socialLinks.facebook,
+    // },
+    // {
+    //   icon: '/SocialIcons/tiktok.svg', // 'lucide:tiktok',
+    //   url: socialLinks.facebook,
+    // },
+    // {
+    //   icon: '/SocialIcons/twitter.svg', // 'lucide:twitter',
+    //   url: socialLinks.twitter,
+    // },
+    // {
+    //   icon: 'lucide:linkedin',
+    //   url: socialLinks.linkedin,
+    // },
   ],
 };

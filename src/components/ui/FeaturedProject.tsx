@@ -34,7 +34,6 @@ const FeaturedProject = ({
         <div
           className={cn(
             'w-full lg:max-w-[60%] absolute inset-0 h-full -z-20 lg:z-0 lg:object-contain rounded overflow-hidden shadow-2xl group',
-
             align === 'left' && 'ml-auto'
           )}
         >
@@ -64,9 +63,9 @@ const FeaturedProject = ({
           )}
         >
           <div>
-            <div className="font-mono hidden lg:block text-accent capitalize text-xs lg:mb-2.5">
+            {/* <div className="font-mono hidden lg:block text-accent capitalize text-xs lg:mb-2.5">
               featured project
-            </div>
+            </div> */}
             <h2 className="heading-tertiary !text-white lg:!text-dark-2 !font-semibold lg:!font-normal !normal-case">
               <a
                 href={url}
@@ -88,14 +87,14 @@ const FeaturedProject = ({
               <p className="text-dark-1">{description}</p>
               {/* <div className="hidden my-3 font-mono text-xs capitalize lg:block text-accent lg:my-2 lg:mt-3">
                 tasks / achievements
-              </div>
+              </div> */}
               <div className="hidden text-base lg:block lg:text-sm">
                 {tasks}
-              </div> */}
+              </div>
             </div>
           </div>
 
-          <p
+          {/* <p
             className={cn(
               'font-mono text-[10px] text-accent lg:text-accent lg:text-xs justify-center capitalize flex flex-wrap gap-2 lg:gap-x-5 items-center lg:justify-end',
               align === 'left' && 'lg:justify-start'
@@ -104,7 +103,7 @@ const FeaturedProject = ({
             {tags.map((tag) => (
               <span key={tag.replaceAll(' ', '')}>{tag}</span>
             ))}
-          </p>
+          </p> */}
 
           {repo && (
             <div
@@ -175,6 +174,7 @@ const FeaturedProject = ({
 
           <div className={cn('text-dark-1 space-y-2 text-sm')}>
             <p className="text-base text-dark-1">{description}</p>
+            <div className="text-base lg:block lg:text-sm">{tasks}</div>
             {/* <div className="hidden my-3 font-mono text-xs capitalize lg:block text-accent lg:my-2 lg:mt-3">
               tasks / achievements
             </div>
@@ -185,7 +185,7 @@ const FeaturedProject = ({
             </div> */}
           </div>
 
-          <p
+          {/* <p
             className={cn(
               'font-mono text-[10px] text-accent lg:text-accent lg:text-xs justify-center capitalize flex flex-wrap gap-2 lg:gap-x-5 items-center lg:justify-end',
               align === 'left' && 'lg:justify-start'
@@ -194,7 +194,7 @@ const FeaturedProject = ({
             {tags.map((tag) => (
               <span key={tag.replaceAll(' ', '')}>{tag}</span>
             ))}
-          </p>
+          </p> */}
 
           {repo && (
             <div

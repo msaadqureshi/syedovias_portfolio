@@ -2,14 +2,48 @@ import { FeaturedProjectsSectionType } from '@/lib/types/sections';
 import { getId } from '@/lib/utils/helper';
 
 const featuredProjectsSection: FeaturedProjectsSectionType = {
-  title: "projects i've worked on (My Businesses)",
+  title: 'My Businesses', //My Projects i've worked on (Businesses)
   projects: [
     {
       id: getId(),
+      name: 'Super Models Job',
+      description: 'Transforming the Fashion Industry',
+      // tasks: `Founder of Supermodelsjob.com: Ovais' groundbreaking platform, Supermodelsjob.com, is the world's first global marketplace for fashion jobs. By connecting aspiring creatives with industry leaders worldwide, he is fostering a more inclusive and diverse global fashion community.
+      //         Empowering Neglected Talent: Through Supermodelsjob.com, Mr. Shah provides unprecedented global exposure to talents often overlooked by traditional fashion channels, leveling the playing field and opening doors for creatives from all corners of the world. His belief that "a great team can achieve anything" drives him to build an environment where individuals can flourish and reach their full potential.
+      //         Explore Supermodelsjob.com Discover how Mr. Shah is transforming the fashion industry and connecting global talent.`,
+      tasks: `Ovais Shah: Revolutionizing the Global Fashion Industry with Supermodelsjob.com
+In the dynamic world of fashion, Ovais Shah stands as a visionary leader, driving change and progress through his groundbreaking platform, Supermodelsjob.com - the world's first global platform for fashion jobs.
+With an unwavering commitment to empowering talent, Shah is not only connecting fashion creatives with industry professionals on an unprecedented scale but also shining a spotlight on often-neglected local talent, providing them with unparalleled global exposure. By transcending geographical boundaries and cultural barriers, Supermodelsjob.com is leveling the playing field, fostering a more inclusive and diverse fashion community where creativity knows no limits.
+Through this innovative platform, Shah is bridging the gap between aspiring designers, models, photographers, stylists, and other creatives with industry elites, propelling the fashion industry into a new era of collaboration, innovation, and connectivity.`,
+      // As the Supermodelsjob.com community continues to grow, the future of fashion looks brighter than ever before - a future where talent is recognized, nurtured, and celebrated, regardless of origin.`,
+      url: 'https://supermodelsjob.com/',
+      img: '/smj.png',
+      tags: ['Models, Photographers, Makeup Artists'],
+    },
+    {
+      id: getId(),
       name: '800CarGuru',
-      description: 'UAE`s LARGEST CAR REPAIR SERVICE PROVIDER.',
+      description: 'Driving Automotive Service Excellence in the UAE',
       tasks:
-        "As a freelancer, I understood the client's requirements and executed a plan to develop and design an e-commerce platform, including the frontend UI, backend setup with database, APIs, and integration with payment platforms.",
+        //   (
+        //   <div className="col-xs-12 col-md-4 col-lg-6 info-panel">
+        //     <strong>CEO &amp; Founder of 800 CARGURU:</strong> Ovais has also
+        //     achieved remarkable success in the UAE's automotive service sector. As
+        //     the visionary behind 800 CARGURU, he has built the company into the
+        //     largest onsite service provider in the country, serving over 300,000
+        //     satisfied customers.
+        //     <br />
+        //     <br />
+        //     <strong>Commitment to Quality and Convenience:</strong> With a
+        //     state-of-the-art service center in Dubai, 800 CARGURU delivers
+        //     exceptional automotive care and convenience, setting new standards for
+        //     customer satisfaction in the region. Ovais' dedication to "always
+        //     working for excellence" ensures that his businesses consistently
+        //     exceed expectations.
+        //   </div>
+        // ),
+        `CEO & Founder of 800 CARGURU: Ovais has also achieved remarkable success in the UAE's automotive service sector. As the visionary behind 800 CARGURU, he has built the company into the largest onsite service provider in the country, serving over 300,000 satisfied customers.
+       Commitment to Quality and Convenience: With a state-of-the-art service center in Dubai, 800 CARGURU delivers exceptional automotive care and convenience, setting new standards for customer satisfaction in the region. Ovais' dedication to "always working for excellence" ensures that his businesses consistently exceed expectations.`,
       url: 'https://800carguru.ae/',
       img: '/carguru.png',
       tags: [
@@ -32,17 +66,46 @@ const featuredProjectsSection: FeaturedProjectsSectionType = {
         'SERVICE CONTRACT',
       ],
     },
-    {
-      id: getId(),
-      name: 'Super Models Job',
-      description:
-        'World’s First Ever Global Platform for Fashion Jobs Models, Photographers, Makeup Artists & more.',
-      tasks:
-        'As a freelancer, I developed this project by planning, communicating with the client, gathering feedback, implementing UI & pages, and integrating real-time data fetching with filtering functionality.',
-      url: 'https://supermodelsjob.com/',
-      img: '/smj.png',
-      tags: ['Models, Photographers, Makeup Artists'],
-    },
+
+    // {
+    //   id: getId(),
+    //   name: '800CarGuru',
+    //   description: 'UAE`s LARGEST CAR REPAIR SERVICE PROVIDER.',
+    //   tasks:
+    //     "As a freelancer, I understood the client's requirements and executed a plan to develop and design an e-commerce platform, including the frontend UI, backend setup with database, APIs, and integration with payment platforms.",
+    //   url: 'https://800carguru.ae/',
+    //   img: '/carguru.png',
+    //   tags: [
+    //     'JUMP START',
+    //     'FUEL EMERGENCY',
+    //     'OIL CHANGE',
+    //     'BRAKE PADS',
+    //     'NEW BATTERY',
+    //     'BATTERY CLAIM',
+    //     'NEW TYRE',
+    //     'TYRE CHANGE',
+    //     'AC GAS REFILL',
+    //     'CAR WASH',
+    //     'MINOR SERVICE',
+    //     'MAJOR SERVICE',
+    //     'RTA PASSING',
+    //     'CAR TOW',
+    //     'PPF',
+    //     'CAR WRAPPING',
+    //     'SERVICE CONTRACT',
+    //   ],
+    // },
+    // {
+    //   id: getId(),
+    //   name: 'Super Models Job',
+    //   description:
+    //     'World’s First Ever Global Platform for Fashion Jobs Models, Photographers, Makeup Artists & more.',
+    //   tasks:
+    //     'As a freelancer, I developed this project by planning, communicating with the client, gathering feedback, implementing UI & pages, and integrating real-time data fetching with filtering functionality.',
+    //   url: 'https://supermodelsjob.com/',
+    //   img: '/smj.png',
+    //   tags: ['Models, Photographers, Makeup Artists'],
+    // },
     // {
     //   id: getId(),
     //   name: 'GetLifeGuard',

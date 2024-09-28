@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @layer base {
+
   /* Color variables for future use */
   :root {
     /* --color-bg: #fcfaf8; */

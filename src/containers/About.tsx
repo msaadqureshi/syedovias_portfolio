@@ -8,11 +8,22 @@ import { AuthorImage, ListItem, Wrapper } from '@/components';
 import { getSectionAnimation } from '@/styles/animations';
 
 import { useEffect, useState } from 'react';
+import { getInstagramFeed } from '@/lib/utils/functions';
 
 const About = () => {
   const { title, img, list } = aboutSection;
   // To avoid hydration error
   const [domLoaded, setDomLoaded] = useState(false);
+  const [feed, setFeed] = useState([]);
+
+  useEffect(() => {
+    async function fetchFeed() {
+      const instagramFeed = await getInstagramFeed('ssovais'); // Replace with your Instagram username
+      setFeed(instagramFeed);
+    }
+
+    // fetchFeed();
+  }, []);
 
   useEffect(() => {
     setDomLoaded(true);
@@ -24,8 +35,8 @@ const About = () => {
       <main className="flex flex-col items-center gap-16 lg:items-start lg:flex-row">
         <div className="space-y-4 lg:w-3/5">
           <p>
-            Hi, my name is {author.name}, a dynamic entrepreneur and visionary
-            businessman with a passion for innovation and excellence.{' '}
+            Hi, I’m {author.name}, a dynamic entrepreneur and visionary with a
+            passion for innovation and excellence.{' '}
             {/* <Link
               href="https://bhu.ac.in/"
               target="_blank"
@@ -33,14 +44,11 @@ const About = () => {
             >
               Banaras Hindu University
             </Link> */}
-            <br /> With a wealth of experience across various industries, Syed
-            has consistently demonstrated his ability to identify emerging
-            trends, capitalize on opportunities, and turn ambitious ideas into
-            successful ventures.
+            <br /> With extensive experience across various industries, I have
+            consistently demonstrated an ability to identify emerging trends,
+            seize opportunities, and transform ambitious ideas into successful
+            ventures.
           </p>
-
-          <p>My main focus - - - - - - - .</p>
-
           {list && (
             <>
               <p>{list.title}</p>
@@ -52,15 +60,16 @@ const About = () => {
             </>
           )}
           <>
-            <h3 className="text-accent">Our Vision</h3>
+            <h3 className="text-accent">My Vision</h3>
             <p>
-              Syed Ovais Shah believes in the power of transformative leadership
-              and strategic thinking. <br /> His vision is to build businesses
-              that not only thrive in the marketplace but also contribute
-              positively to the community and the environment. <br /> By
-              embracing cutting-edge technologies and sustainable practices,
-              S.Ovais is dedicated to creating a legacy of success and social
-              impact.
+              I believe in the power of transformative leadership and strategic
+              thinking.
+              <br />
+              My vision is to build businesses that not only thrive in the
+              marketplace but also contribute positively to society and the
+              environment. By embracing cutting-edge technologies and
+              sustainable practices, I am dedicated to creating a legacy of
+              success and social impact.
             </p>
           </>
         </div>
