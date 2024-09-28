@@ -18,7 +18,7 @@ export interface NavbarSectionType {
 }
 
 export interface HeroSectionType extends Section {
-  title?: string;
+  title: string;
   subtitle?: string;
   tagline: string;
   subtagline: string;
