@@ -26,8 +26,8 @@ const ProjectCardTiltImage = ({ project, filter }: Props): JSX.Element => {
               src={project.img}
               alt={project.name}
               width={400}
-              height={300}
-              className="rounded-2xl w-full h-auto lg:w-[400px] lg:h-[300px]"
+              height={250}
+              className="rounded-2xl w-full h-auto lg:w-[400px] lg:h-[250px]" // lg:h-[300px]  lg:w-[400px] lg:h-auto
             />
             {/* </Link> */}
           </div>

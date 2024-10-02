@@ -11,10 +11,13 @@ import ProjectCardTiltImage from '@/components/ui/ProjectCardTiltImage';
 import { getSectionAnimation } from '@/styles/animations';
 import { useEffect, useState } from 'react';
 
+import SAGA2024 from './../../public/Achievements/SAGA2024.jpeg';
+
 const Achievements = [
   {
     slug: 'ai-chatbot',
     name: 'AI Chatbot',
+    // img: SAGA2024,
     img: '/Achievements/SAGA2024.jpeg',
     category: 'Achievement',
     // tags: [],
@@ -30,10 +33,13 @@ const Achievements = [
     name: 'Finance Dashboard',
     img: '/Achievements/GULF2024.jpeg',
   },
+  {
+    name: 'Achievement',
+    img: '/Achievements/achievement.png',
+  },
 ];
 
 const FeaturedProjects = () => {
-
   return (
     <Wrapper id="projects" {...getSectionAnimation}>
       <div className="mb-20 space-y-3 text-center lg:text-left">

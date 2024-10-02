@@ -9,6 +9,7 @@ import { StringKeyValueType } from '../types';
 export const author = {
   name: 'Ovais Shah',
   email: 'shah@syedovais.com',
+  send_email_api_url: 'https://800carguru.me/SMTPmailer/so_email.php',
 };
 
 export const socialLinks: StringKeyValueType = {
