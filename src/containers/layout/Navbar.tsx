@@ -91,10 +91,10 @@ const Navbar = () => {
       id="navbar"
       className="fixed inset-x-0 top-0 right-0 z-50 flex items-end justify-between px-8 py-4 duration-500 md:px-6 xl:px-12 backdrop-blur-lg"
     >
-      <h1 className="relative text-2xl capitalize font-signature text-accent group top-1">
+      <h1 className="relative text-3xl capitalize font-signature text-red group top-1">
         <Link href="/#hero" className="block">
           {author.name}
-          <div className="absolute bottom-1.5 left-0 h-[1px] w-0 group-hover:w-full bg-accent duration-300"></div>
+          <div className="absolute bottom-1.5 left-0 h-[1px] w-0 group-hover:w-full bg-red duration-300"></div>
         </Link>
       </h1>
 

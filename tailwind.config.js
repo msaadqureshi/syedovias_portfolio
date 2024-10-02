@@ -21,6 +21,7 @@ module.exports = {
         'dark-1': 'var(--color-dark-1)',
         'dark-2': 'var(--color-dark-2)',
         'dark-3': 'var(--color-dark-3)',
+        red: 'var(--color-red)',
       },
       transitionTimingFunction: {
         'in-scroll': 'cubic-bezier(0.645, 0.045, 0.355, 1)',

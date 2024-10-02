@@ -20,6 +20,8 @@
     --color-accent: theme(colors.sky.500);
     --color-accent-light: theme(colors.sky.500/0.1);
     --color-accent-torch: theme(colors.blue.700/0.15);
+    --color-red: red;
+
     --color-text: theme(colors.slate.600);
     --color-dark-1: theme(colors.slate.900);
     --color-dark-2: theme(colors.slate.700);
@@ -58,6 +60,7 @@
 .h2 {
   @apply text-3xl sm:text-4xl capitalize font-medium mb-8 sm:mb-12 text-dark-2;
 }
+
 .heading-tertiary,
 .h3 {
   @apply text-xl sm:text-2xl tracking-wide capitalize font-medium text-dark-2;
