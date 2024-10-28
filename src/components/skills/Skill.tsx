@@ -37,8 +37,8 @@ const Skill = ({
         </h3>
 
         <div key={getId()} className="flex flex-wrap justify-center gap-2">
-          {skills.map(({ name, icon }) => (
-            <SkillIcon key={getId()} src={icon} name={name} />
+          {skills.map(({ name, icon, iconEmoji }) => (
+            <SkillIcon key={getId()} src={iconEmoji} name={name} />
           ))}
         </div>
 

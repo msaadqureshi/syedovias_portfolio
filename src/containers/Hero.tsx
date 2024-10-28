@@ -92,7 +92,7 @@ const Hero = () => {
           variants={slideUp({ delay: getAnimationDelay(3) })}
           initial="hidden"
           animate="show"
-          className=" font-mono max-w-xl text-base md:text-lg"
+          className=" font-mono max-w-xl text-base md:text-lg" // max-w-3xl
         >
           {description}
         </motion.p>
