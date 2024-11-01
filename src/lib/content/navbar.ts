@@ -4,10 +4,10 @@ import { resumeFileName } from '@/lib/utils/config';
 export const navbarSection: NavbarSectionType = {
   navLinks: [
     { name: 'about', url: '/#about' },
-    { name: 'My Travel Diary', url: '/#skills' }, // what i do
+    { name: 'My Travel Diary', url: '/#Activity' }, // what i do
     // { name: 'skills', url: '/#skills' },
     // { name: 'experience', url: '/#experience' },
-    { name: 'projects', url: '/#projects' },
+    { name: 'My Businesses', url: '/#projects' }, // projects
     { name: 'contact', url: '/#contact' },
   ],
   cta: {

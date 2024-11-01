@@ -11,7 +11,7 @@ const Skills = () => {
   const { isDarkMode } = useTheme();
 
   return (
-    <Wrapper id="skills" {...getSectionAnimation}>
+    <Wrapper id="Activity" {...getSectionAnimation}>
       <h2 className="text-center heading-secondary">{title}</h2>
 
       <div className="space-y-32">

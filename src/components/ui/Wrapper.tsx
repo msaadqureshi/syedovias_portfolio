@@ -21,6 +21,7 @@ const Wrapper = ({
     const MotionTag = motion(as);
 
     return (
+      // className={`py-24 md:py-32 ${className}`}
       <MotionTag id={id} className={`py-20 md:py-28 ${className}`} {...rest}>
         {children}
       </MotionTag>
