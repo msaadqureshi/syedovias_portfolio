@@ -63,18 +63,20 @@ const FeaturedProjects = () => {
         ))}
       </div>
       <motion.h2 className="heading-secondary text-center !mb-12"> </motion.h2>
-      <motion.h2 className="heading-secondary text-center !mb-12">
-        Achievements
-      </motion.h2>
-      <div className="grid md:grid-cols-2 gap-4 place-items-center">
-        {Achievements.map((item, index) => (
-          <ProjectCardTiltImage
-            project={item}
-            key={index}
-            // filter={{ key: 'category', value: 'Achievement' }}
-          />
-        ))}
-      </div>
+      <Wrapper {...getSectionAnimation}>
+        <motion.h2 className="heading-secondary text-center !mb-12">
+          Achievements
+        </motion.h2>
+        <div className="grid md:grid-cols-2 gap-4 place-items-center">
+          {Achievements.map((item, index) => (
+            <ProjectCardTiltImage
+              project={item}
+              key={index}
+              // filter={{ key: 'category', value: 'Achievement' }}
+            />
+          ))}
+        </div>
+      </Wrapper>
     </Wrapper>
   );
 };

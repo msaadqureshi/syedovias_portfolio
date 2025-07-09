@@ -4,7 +4,7 @@ import { heroSection } from '@/lib/content/hero';
 import useWindowWidth from '@/lib/hooks/use-window-width';
 import { getBreakpointsWidth } from '@/lib/utils/helper';
 
-import { slideUp } from '@/styles/animations';
+import { slideUp, zoomIn } from '@/styles/animations';
 
 import { motion } from 'framer-motion';
 
@@ -21,7 +21,7 @@ const Hero = () => {
 
   const windowWidth = useWindowWidth();
   const md = getBreakpointsWidth('md');
-  const DEFAULT_ANIMATION_DELAY = windowWidth <= md ? 0.9 : 1.7;
+  const DEFAULT_ANIMATION_DELAY = windowWidth <= md ? 0 : 0; // md ? 0.9 : 1.7;
 
   const getAnimationDelay = (i: number, increment = 0.15) =>
     DEFAULT_ANIMATION_DELAY + increment * i;
@@ -46,7 +46,7 @@ const Hero = () => {
       /> */}
       <div className="flex-1 max-w-5xl">
         <motion.p
-          variants={slideUp({ delay: getAnimationDelay(0) })}
+          variants={zoomIn({ delay: getAnimationDelay(0) })}
           initial="hidden"
           animate="show"
           className="font-mono text-sm md:text-base text-accent"
@@ -55,7 +55,7 @@ const Hero = () => {
         </motion.p>
         <div className="max-w-5xl text-4xl font-bold tracking-tighter md:text-7xl">
           <motion.h1
-            variants={slideUp({ delay: getAnimationDelay(1) })}
+            variants={zoomIn({ delay: getAnimationDelay(1) })}
             initial="hidden"
             animate="show"
             className="text-slate-900 dark:text-slate-200 capitalize mb-2 leading-[1.1]"
@@ -67,12 +67,12 @@ const Hero = () => {
             alt="Descriptive Image Text"
             style={{ width: '900px' }} // height: '400px'
             className="object-cover rounded-lg shadow-lg"
-            variants={slideUp({ delay: getAnimationDelay(0) })}
+            variants={zoomIn({ delay: getAnimationDelay(0) })}
             initial="hidden"
             animate="show"
           />
           <motion.h1
-            variants={slideUp({ delay: getAnimationDelay(2) })}
+            variants={zoomIn({ delay: getAnimationDelay(2) })}
             initial="hidden"
             animate="show"
             className="leading-[1.2]"
@@ -81,7 +81,7 @@ const Hero = () => {
           </motion.h1>
         </div>
         <motion.p
-          variants={slideUp({ delay: getAnimationDelay(2) })}
+          variants={zoomIn({ delay: getAnimationDelay(2) })}
           initial="hidden"
           animate="show"
           className="mb-5 text-2xl capitalize sm:text-3xl leading-[1.2]"
@@ -98,7 +98,7 @@ const Hero = () => {
         </motion.p>
 
         <motion.p
-          variants={slideUp({ delay: getAnimationDelay(4) })}
+          variants={zoomIn({ delay: getAnimationDelay(4) })}
           initial="hidden"
           animate="show"
           className="font-mono text-xs md:text-sm text-accent"

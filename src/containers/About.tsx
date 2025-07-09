@@ -13,7 +13,7 @@ import { getInstagramFeed } from '@/lib/utils/functions';
 const About = () => {
   const { title, img, list } = aboutSection;
   // To avoid hydration error
-  const [domLoaded, setDomLoaded] = useState(false);
+  const [domLoaded, setDomLoaded] = useState(true); // defult false
   const [feed, setFeed] = useState([]);
 
   useEffect(() => {
@@ -31,6 +31,7 @@ const About = () => {
 
   return domLoaded ? (
     <Wrapper id="about" {...getSectionAnimation}>
+    {/* <Wrapper id="about"> */}
       <h2 className="heading-secondary">{title}</h2>
       <main className="flex flex-col items-center gap-16 lg:items-start lg:flex-row">
         <div className="space-y-4 lg:w-3/5">

@@ -96,14 +96,39 @@ export const slideUp = ({
   },
 });
 
+export const zoomIn = ({
+  delay = 0,
+  duration = 0.75,
+  scaleFrom = 0.8,
+} = {}) => ({
+  hidden: {
+    opacity: 0,
+    scale: scaleFrom,
+  },
+  show: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      delay,
+      duration,
+      ease: 'easeOut',
+    },
+  },
+});
+
 // * SECTION VARIANTS
 
 // * For sections
 
-export const sectionVariants = slideUp({
-  delay: 0.5,
-  duration: 1.75,
-  offset: 50,
+// export const sectionVariants = slideUp({
+//   delay: 0.2,
+//   duration: 1.0,
+//   offset: 20,
+// });
+export const sectionVariants = zoomIn({
+  delay: 0,
+  duration: 1.0,
+  scaleFrom: 0.9,
 });
 
 export const getSectionAnimation = {
